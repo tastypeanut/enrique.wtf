@@ -1,2 +1,2 @@
 /:title
-  server: Welcome user to :title
+  window-header: Welcome user to :title
