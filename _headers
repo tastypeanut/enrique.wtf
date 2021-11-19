@@ -1,4 +1,6 @@
-/:title
-  window-header: Welcome user to :title
 /*
-  custom-header: nice
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-XSS-Protection: 1; mode=block
+  Permissions-Policy: camera=(), geolocation=(self), microphone=()
+  Challenge: Follow the white rabbit and tell me what you find
