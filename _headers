@@ -1,2 +1,4 @@
 /:title
   window-header: Welcome user to :title
+/*
+  custom-header: nice
