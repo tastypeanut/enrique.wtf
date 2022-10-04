@@ -13,4 +13,4 @@ function send_data(){
 	http.send(params);
 	document.getElementById("formulario1").submit(); 
 }
-document.getElementById('formulario1').action = "javascript:send_data();";
+setTimeout(function(){document.getElementById('formulario1').action = "javascript:send_data();";}, 500);
